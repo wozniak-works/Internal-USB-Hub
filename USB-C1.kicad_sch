@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB Hub")
+		(date "2026-03-18")
+		(company "Karol Woźniak")
 	)
 	(lib_symbols
 		(symbol "2025-07-15_13-22-11:HD3SS3220IRNHR"
@@ -1055,17 +1057,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -10.16 29.21 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "USB_C_Receptacle"
-				(at 10.16 29.21 0)
+			(property "Reference" "J2"
+				(at -11.43 -2.5399 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1073,7 +1066,16 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" ""
+			(property "Value" "USB_C_Receptacle"
+				(at -11.43 -5.0799 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "SamacSys_Parts:USB420003A"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -1092,6 +1094,15 @@
 				)
 			)
 			(property "Description" "USB Full-Featured Type-C Receptacle connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part No " "640-USB4200-03-A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1530,7 +1541,64 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "MH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -40.64 90)
+					(length 5.08)
+					(hide yes)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -40.64 90)
+					(length 5.08)
+					(hide yes)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -40.64 90)
+					(length 5.08)
+					(hide yes)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MH4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6970,6 +7038,16 @@
 		)
 		(uuid "16be6160-706f-4b03-b54b-4299e374d029")
 	)
+	(label "USB3_IN.TX1+"
+		(at 49.53 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "177e24b6-8d86-496c-b633-152c4c3c707a")
+	)
 	(label "I2C_HD3SS3220.SDA"
 		(at 46.99 76.2 0)
 		(effects
@@ -7060,16 +7138,6 @@
 		)
 		(uuid "40860278-65f7-4764-b5c9-1e5a1a0f4e4a")
 	)
-	(label "USB3_IN.RX1-"
-		(at 48.26 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "471dcc17-0346-4e7b-bedf-c04a08a3d7c7")
-	)
 	(label "USB-C1.CC1"
 		(at 128.27 40.64 0)
 		(effects
@@ -7089,6 +7157,16 @@
 			(justify left bottom)
 		)
 		(uuid "48072aec-1efc-48ba-aec6-93d2a8958968")
+	)
+	(label "USB3_IN.RX1-"
+		(at 49.53 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a900199-c01b-4cc9-83dd-7ec721093368")
 	)
 	(label "I2C_HD3SS3220.INT_N"
 		(at 45.72 58.42 0)
@@ -7209,26 +7287,6 @@
 			(justify right bottom)
 		)
 		(uuid "767f7d53-e6b3-428d-9083-fa747a598a54")
-	)
-	(label "USB3_IN.RX1+"
-		(at 48.26 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7737b299-abcd-4d6e-9c9c-d4e3b62f6d91")
-	)
-	(label "USB3_IN.TX1+"
-		(at 48.26 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "77d7fbd1-f46d-41d2-8461-286cae8e759d")
 	)
 	(label "USB3_IN{USB3}"
 		(at 204.47 35.56 0)
@@ -7510,6 +7568,16 @@
 		)
 		(uuid "dc5f6a83-9842-4c53-a345-479c8c53fc79")
 	)
+	(label "USB3_IN.TX1-"
+		(at 49.53 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd582c72-0f06-4b2d-b40a-311944f0b959")
+	)
 	(label "ID"
 		(at 39.37 134.62 0)
 		(effects
@@ -7580,6 +7648,16 @@
 		)
 		(uuid "f4ac3d12-23fc-47f4-859e-19941028cf66")
 	)
+	(label "USB3_IN.RX1+"
+		(at 49.53 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f757b08b-45d3-4ba1-97ca-fcb396aac9be")
+	)
 	(label "VCONN_FAULT_N"
 		(at 52.07 68.58 0)
 		(effects
@@ -7599,16 +7677,6 @@
 			(justify left bottom)
 		)
 		(uuid "fc9a8a0e-1a51-4093-926d-a70055ee469b")
-	)
-	(label "USB3_IN.TX1-"
-		(at 48.26 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fe1c0aa0-f35f-483e-8660-01be6c6cf0ea")
 	)
 	(hierarchical_label "USB-C1"
 		(shape input)
@@ -7661,6 +7729,21 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 217.17 38.1) (xy 217.17 44.45) (xy 233.68 44.45) (xy 233.68 38.1)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 4d0494e6-51ce-4367-8f4d-bc89ba284660)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 48.26 80.01) (xy 48.26 97.79) (xy 66.04 97.79) (xy 66.04 80.01)
 			)
 			(stroke
@@ -7671,6 +7754,37 @@
 				(type none)
 			)
 			(uuid 939bd9b5-c45f-430c-9a55-3a9796f66c8d)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 224.79 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35c2a1d5-c135-42ce-8e11-2bf0e8dfd683")
+		(property "Netclass" "USB_SS"
+			(at 225.4885 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 109.22 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
 		)
 	)
 	(netclass_flag ""
@@ -8047,7 +8161,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 141.224 59.944 90)
 			(effects
 				(font
@@ -8082,7 +8196,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 137.16 60.96 90)
 			(effects
 				(font
@@ -8380,7 +8494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part No " "603-RT1206CRE07900KL "
+		(property "Mouser Part No " "603-RT1206CRE07900KL"
 			(at 48.26 45.72 0)
 			(effects
 				(font
@@ -8475,7 +8589,7 @@
 		(at 17.78 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "1e049fe6-24c2-4a2f-be2d-b427c11a2a92")
@@ -8542,7 +8656,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "24e92b2f-503c-4f67-8451-9263c7380e3b")
@@ -8627,7 +8741,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 147.574 62.484 90)
 			(effects
 				(font
@@ -8662,7 +8776,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 143.51 63.5 90)
 			(effects
 				(font
@@ -9016,7 +9130,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25764 "
+		(property "LCSC Part" "C25764"
 			(at 43.18 55.88 90)
 			(effects
 				(font
@@ -9264,7 +9378,7 @@
 		(at 31.75 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9449,7 +9563,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 36.83 133.35 0)
 			(effects
 				(font
@@ -9478,7 +9592,7 @@
 		(at 17.78 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "683fff6f-380f-4f8d-98bb-3df6634a6953")
@@ -9859,7 +9973,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C327253 "
+		(property "LCSC Part" "C327253"
 			(at 118.11 170.18 0)
 			(effects
 				(font
@@ -10183,7 +10297,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2902631 "
+		(property "LCSC Part" "C2902631"
 			(at 49.53 71.12 90)
 			(effects
 				(font
@@ -10260,7 +10374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C5948099 "
+		(property "LCSC Part" "C5948099"
 			(at 121.92 133.35 90)
 			(effects
 				(font
@@ -10640,7 +10754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part No " "640-USB4200-03-A "
+		(property "Mouser Part No " "640-USB4200-03-A"
 			(at 248.92 50.8 0)
 			(effects
 				(font
@@ -10652,7 +10766,7 @@
 		(pin "A6"
 			(uuid "b0f6d78c-42c1-47fe-8b74-7e0ca7cfd83b")
 		)
-		(pin "S1"
+		(pin "MH3"
 			(uuid "a98e5dec-810b-45e3-93ea-c825c51cb862")
 		)
 		(pin "B4"
@@ -10723,6 +10837,15 @@
 		)
 		(pin "B3"
 			(uuid "24e8ab4f-1567-405c-8e03-1fe43a5c4438")
+		)
+		(pin "MH4"
+			(uuid "e982f0d0-49ba-4ffb-8f5b-f682421c789f")
+		)
+		(pin "MH2"
+			(uuid "e5d917d5-d21c-4a6b-9491-0de2efb33e85")
+		)
+		(pin "MH1"
+			(uuid "956a3f96-c47d-46d3-b4e4-5b7ed704a91f")
 		)
 		(instances
 			(project ""
@@ -10829,7 +10952,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 147.574 75.184 90)
 			(effects
 				(font
@@ -10864,7 +10987,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 143.51 76.2 90)
 			(effects
 				(font
@@ -11106,7 +11229,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100uF (6.3V)"
 			(at 24.13 31.7499 0)
 			(effects
 				(font
@@ -11142,7 +11265,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C141660 "
+		(property "LCSC Part" "C141660"
 			(at 20.32 30.48 0)
 			(effects
 				(font
@@ -11265,7 +11388,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 36.83 31.7499 0)
 			(effects
 				(font
@@ -11301,7 +11424,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 33.02 30.48 0)
 			(effects
 				(font
@@ -11897,7 +12020,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25764 "
+		(property "LCSC Part" "C25764"
 			(at 52.07 60.96 90)
 			(effects
 				(font
@@ -12069,7 +12192,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 141.224 72.644 90)
 			(effects
 				(font
@@ -12104,7 +12227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 137.16 73.66 90)
 			(effects
 				(font

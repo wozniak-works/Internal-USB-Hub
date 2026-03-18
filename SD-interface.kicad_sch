@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB Hub")
+		(date "2026-03-18")
+		(company "Karol Woźniak")
 	)
 	(lib_symbols
 		(symbol "Connector:SD_Card_Receptacle"
@@ -4771,6 +4773,21 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 137.16 35.56) (xy 137.16 41.91) (xy 144.78 41.91) (xy 144.78 35.56)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 54a5f262-4274-4a30-9c89-c423ca14d5c9)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 53.34 34.29) (xy 53.34 50.8) (xy 86.36 50.8) (xy 86.36 34.29)
 			)
 			(stroke
@@ -4806,6 +4823,37 @@
 		)
 		(property "Component Class" ""
 			(at -25.4 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 144.78 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b92b173c-f4ff-4256-9b0c-c8f52a1cbace")
+		(property "Netclass" "USB_SS"
+			(at 145.4785 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 29.21 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4929,7 +4977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 20.828 59.944 0)
 			(effects
 				(font
@@ -4965,7 +5013,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 20.32 57.15 0)
 			(effects
 				(font
@@ -5123,7 +5171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part No " "179-SD-2-A "
+		(property "Mouser Part No " "179-SD-2-A"
 			(at 247.65 49.53 0)
 			(effects
 				(font
@@ -5198,7 +5246,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 48.768 80.01 0)
 			(effects
 				(font
@@ -5234,7 +5282,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 48.26 77.47 0)
 			(effects
 				(font
@@ -5574,7 +5622,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2980695 "
+		(property "LCSC Part" "C2980695"
 			(at 78.74 40.64 90)
 			(effects
 				(font
@@ -5814,7 +5862,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 30.988 80.01 0)
 			(effects
 				(font
@@ -5850,7 +5898,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 30.48 77.47 0)
 			(effects
 				(font
@@ -6190,7 +6238,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2980695 "
+		(property "LCSC Part" "C2980695"
 			(at 72.39 38.1 90)
 			(effects
 				(font
@@ -6430,7 +6478,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 39.878 80.01 0)
 			(effects
 				(font
@@ -6466,7 +6514,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 39.37 77.47 0)
 			(effects
 				(font
@@ -6981,7 +7029,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 29.718 59.944 0)
 			(effects
 				(font
@@ -7017,7 +7065,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 29.21 57.15 0)
 			(effects
 				(font
@@ -7579,7 +7627,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 22.098 80.01 0)
 			(effects
 				(font
@@ -7615,7 +7663,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C181043 "
+		(property "LCSC Part" "C181043"
 			(at 20.32 77.47 0)
 			(effects
 				(font
@@ -7993,7 +8041,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C137858 "
+		(property "LCSC Part" "C137858"
 			(at 74.93 111.76 90)
 			(effects
 				(font

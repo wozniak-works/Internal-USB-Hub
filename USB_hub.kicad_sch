@@ -6,6 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "USB Hub")
+		(date "2026-03-18")
+		(company "Karol Woźniak")
 	)
 	(lib_symbols)
 	(text "these connections may change for better routing "
@@ -37,6 +39,15 @@
 			(justify left top)
 		)
 		(uuid "352f1ddf-845a-4ef3-97f5-725f0ea6addd")
+	)
+	(bus_entry
+		(at 91.44 57.15)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcd5873-933d-40e4-985e-42e2847293af")
 	)
 	(bus
 		(pts

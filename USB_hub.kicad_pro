@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1778
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,152 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|112530000|44328206|682768f1-9aa5-4b3a-be32-5c34bff72cfd|ce00f296-27da-4414-8e84-8f061bf12a24",
+          ""
+        ],
+        [
+          "hole_clearance|138384400|94280400|e0010e0d-0224-42a1-8366-4d3c5225addf|c5a9bfa9-ec22-434a-9331-0cd141f1b816",
+          "it's okay, footprint need this"
+        ],
+        [
+          "hole_clearance|138494400|100780400|718d6aab-c9b8-422b-867c-e480c6e66b6f|5eff1c90-1e63-4f7e-9eef-9db16ff11e64",
+          "it's okay, footprint need this"
+        ],
+        [
+          "hole_clearance|138494400|93580400|e0010e0d-0224-42a1-8366-4d3c5225addf|477bcb5e-a23c-4f7c-b128-fa48609e4eb8",
+          "it's okay, footprint need this"
+        ],
+        [
+          "hole_clearance|138494400|93580400|e0010e0d-0224-42a1-8366-4d3c5225addf|7cb08a74-8489-45cd-88d5-ef6395426790",
+          "it's okay, footprint need this"
+        ],
+        [
+          "hole_clearance|138494400|94430400|3b557c24-3562-4dd2-8d9b-627572dcb3d2|e0010e0d-0224-42a1-8366-4d3c5225addf",
+          "it's okay, footprint need this"
+        ],
+        [
+          "hole_clearance|139144400|96780400|0e1411ad-da82-4a37-b078-939f117e7ab3|f51e42f6-2903-4997-a954-641c66c7370d",
+          ""
+        ],
+        [
+          "hole_clearance|139144400|97580400|f51e42f6-2903-4997-a954-641c66c7370d|8eb0ab9c-fea6-4ace-ad5d-0317e1cc678d",
+          ""
+        ],
+        [
+          "hole_clearance|139144400|98380400|8eb0ab9c-fea6-4ace-ad5d-0317e1cc678d|4b1b9280-49b7-416b-9561-e31321ad8ce9",
+          ""
+        ],
+        [
+          "hole_clearance|139844400|95580400|d79668b0-f382-41e1-82c4-64b4eb72c1f6|d4fdd87d-4535-4cf2-a42c-6906f38e0778",
+          ""
+        ],
+        [
+          "hole_clearance|139844400|96380400|d4fdd87d-4535-4cf2-a42c-6906f38e0778|385ea9aa-2a16-4c66-9788-3664973d5da2",
+          ""
+        ],
+        [
+          "hole_clearance|139844400|98780400|71b30a7e-9ff6-4041-8f6e-ef6d71df0e6e|0603ec28-783e-4eff-b829-293398ba27d3",
+          ""
+        ],
+        [
+          "hole_clearance|139844400|99580400|0603ec28-783e-4eff-b829-293398ba27d3|dbc77af7-b012-4f47-8a00-ea2e3e421446",
+          ""
+        ],
+        [
+          "hole_to_hole|138494400|93580400|477bcb5e-a23c-4f7c-b128-fa48609e4eb8|e0010e0d-0224-42a1-8366-4d3c5225addf",
+          "it's okay, footprint need this"
+        ],
+        [
+          "silk_edge_clearance|103261600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|96025d03-ba40-4933-81a6-ef12db8fdbb3",
+          ""
+        ],
+        [
+          "silk_edge_clearance|119257600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|2068ec0b-a9a1-49b5-844a-8e8246478833",
+          ""
+        ],
+        [
+          "silk_edge_clearance|122257600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|ee7e31fe-92dd-4439-8541-aab279f2d52c",
+          ""
+        ],
+        [
+          "silk_edge_clearance|126666250|128524000|4f01e250-67f2-4b62-8a0a-0d80f59cb5c4|0a7e4b70-43a6-48de-a4fd-102becde3df3",
+          ""
+        ],
+        [
+          "silk_edge_clearance|136142600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|e70637c1-a7b5-4fa0-b32d-5f0720b6c30b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|139142600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|0e0b15bf-efb1-40a0-98b3-692457a78dd5",
+          ""
+        ],
+        [
+          "silk_edge_clearance|144666250|128524000|4f01e250-67f2-4b62-8a0a-0d80f59cb5c4|7128b49a-8d64-4ad6-bc23-a152b81a2c13",
+          ""
+        ],
+        [
+          "silk_edge_clearance|146812000|101875400|4af2ea2f-f3d7-43be-8fdf-847c6ba7e8c8|7d5c5ea8-5764-4740-a73c-8255b67c8793",
+          ""
+        ],
+        [
+          "silk_edge_clearance|146812000|92485400|4af2ea2f-f3d7-43be-8fdf-847c6ba7e8c8|9b2ca4fe-84a7-4676-8898-9bd772adf346",
+          ""
+        ],
+        [
+          "silk_edge_clearance|39751600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|aca99ea5-74d1-41e1-bf13-0e9cb4f2a2e0",
+          ""
+        ],
+        [
+          "silk_edge_clearance|68191600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|95cfde8f-4961-48c1-a0c5-56c7da10b04e",
+          ""
+        ],
+        [
+          "silk_edge_clearance|79061600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|dc24e227-4f2b-4817-a633-102292243e81",
+          ""
+        ],
+        [
+          "silk_edge_clearance|86261600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|0f9df125-8508-4a3a-9947-0bb698c54556",
+          ""
+        ],
+        [
+          "silk_edge_clearance|96061600|24231600|90104fc3-47e7-4042-b2f0-6608dbc7f688|7b421c6f-3d2c-4351-bdd6-3b936a42aeef",
+          ""
+        ],
+        [
+          "silk_over_copper|113646600|68740200|53302352-b91f-4933-ba1b-d2c920c45082|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|117217000|65891785|122ec9fd-8871-485e-9a52-57b6d9cb5937|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|98120800|105416000|349358a9-387b-4b14-9898-1cd6ac2497a9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "solder_mask_bridge|139194400|93080400|e0010e0d-0224-42a1-8366-4d3c5225addf|7cb08a74-8489-45cd-88d5-ef6395426790",
+          ""
+        ],
+        [
+          "unconnected_items|100590600|59732800|88e1b4e4-802f-4dd6-931d-d2d99a3fc48c|23643227-4489-4f31-9ec8-20554c4fe47f",
+          ""
+        ],
+        [
+          "unconnected_items|101090600|59732800|efe5544a-9787-486e-baf6-b2f6d025c908|9c3dd960-dd3c-413f-a12b-69d5dbe43560",
+          ""
+        ],
+        [
+          "unconnected_items|91394317|66284790|ba8909b4-dbff-4eaa-9ee7-eb844d1ce241|64bec2de-1f83-4230-b8ac-96a2c3a40452",
+          ""
+        ],
+        [
+          "unconnected_items|91747871|66638343|ca4eb1b7-c658-48bb-8c4e-8dc189fbce05|399a1699-7862-4588-8218-87cd3737255b",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -136,10 +281,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.15,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -192,10 +337,12 @@
         0.1524,
         0.2032,
         0.25,
+        0.2794,
         0.3556,
         0.5,
         0.8,
-        1.524
+        1.524,
+        4.572
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -209,10 +356,10 @@
         "diff_pair_skew_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 0.4064,
-          "min_amplitude": 0.2286,
+          "max_amplitude": 0.5,
+          "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.2286
+          "spacing": 0.4
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
@@ -238,7 +385,18 @@
       "mfg": "",
       "mpn": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 8,
+        "enabled": true,
+        "topLayer": 6
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -491,27 +649,43 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
-        "via_diameter": 0.3048,
-        "via_drill": 0.3,
+        "via_diameter": 0.3,
+        "via_drill": 0.2,
         "wire_width": 6
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 8
       },
       {
         "clearance": 0.78486,
         "name": "SD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.156972
       },
       {
-        "clearance": 0.155448,
-        "diff_pair_gap": 0.207264,
-        "diff_pair_width": 0.155448,
+        "clearance": 0.1016,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.158242,
         "name": "USB_SS",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "pcb_color": "rgb(50, 255, 39)",
+        "priority": 3,
         "schematic_color": "rgba(4, 0, 255, 0.722)",
-        "track_width": 0.155448
+        "track_width": 0.155448,
+        "via_diameter": 0.25,
+        "via_drill": 0.15
+      },
+      {
+        "clearance": 0.77724,
+        "name": "USB_SS_temp",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -519,6 +693,24 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "+12V": [
+        "Power"
+      ],
+      "+3V3": [
+        "Power"
+      ],
+      "+5V_Power": [
+        "Power"
+      ],
+      "+5V_USB_A": [
+        "Power"
+      ],
+      "+5V_USB_C_SD": [
+        "Power"
+      ],
+      "+5V_prefiltered": [
+        "Power"
+      ],
       "/SD-interface/SD_CK": [
         "SD"
       ],
@@ -543,6 +735,12 @@
       "/SD-interface/TX1-": [
         "USB_SS"
       ],
+      "/SD-interface/USB-SD.D+": [
+        "USB_SS"
+      ],
+      "/SD-interface/USB-SD.D-": [
+        "USB_SS"
+      ],
       "/SD-interface/USB-SD.RX1+": [
         "USB_SS"
       ],
@@ -555,6 +753,12 @@
       "/SD-interface/USB-SD.TX1-": [
         "USB_SS"
       ],
+      "/USB-A1/USB-A1.D+": [
+        "USB_SS"
+      ],
+      "/USB-A1/USB-A1.D-": [
+        "USB_SS"
+      ],
       "/USB-A1/USB-A1.RX1+": [
         "USB_SS"
       ],
@@ -565,6 +769,12 @@
         "USB_SS"
       ],
       "/USB-A1/USB-A1.TX1-": [
+        "USB_SS"
+      ],
+      "/USB-A1/USB-A2.D+": [
+        "USB_SS"
+      ],
+      "/USB-A1/USB-A2.D-": [
         "USB_SS"
       ],
       "/USB-A1/USB-A2.RX1+": [
@@ -615,6 +825,12 @@
       "/USB-C1/USB-C1.TX2-": [
         "USB_SS"
       ],
+      "/USB-C1/USB3_IN.D+": [
+        "USB_SS"
+      ],
+      "/USB-C1/USB3_IN.D-": [
+        "USB_SS"
+      ],
       "/USB-C1/USB3_IN.RX1+": [
         "USB_SS"
       ],
@@ -645,10 +861,22 @@
       "/USB-C2/CTX1-": [
         "USB_SS"
       ],
+      "/USB-C2/CTX1_R+": [
+        "USB_SS"
+      ],
+      "/USB-C2/CTX1_R-": [
+        "USB_SS"
+      ],
       "/USB-C2/CTX2+": [
         "USB_SS"
       ],
       "/USB-C2/CTX2-": [
+        "USB_SS"
+      ],
+      "/USB-C2/CTX2_R+": [
+        "USB_SS"
+      ],
+      "/USB-C2/CTX2_R-": [
         "USB_SS"
       ],
       "/USB-C2/MODE": [
@@ -690,6 +918,12 @@
       "/USB-C2/USB-C2.TX2-": [
         "USB_SS"
       ],
+      "/USB-C2/USB3_IN.D+": [
+        "USB_SS"
+      ],
+      "/USB-C2/USB3_IN.D-": [
+        "USB_SS"
+      ],
       "/USB-C2/USB3_IN.RX1+": [
         "USB_SS"
       ],
@@ -700,6 +934,18 @@
         "USB_SS"
       ],
       "/USB-C2/USB3_IN.TX1-": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/TX1+": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/TX1-": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/TX2+": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/TX2-": [
         "USB_SS"
       ],
       "/USB-C_UP1/USB-C1.RX1+": [
@@ -724,6 +970,12 @@
         "USB_SS"
       ],
       "/USB-C_UP1/USB-C1.TX2-": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/USB3_IN.D+": [
+        "USB_SS"
+      ],
+      "/USB-C_UP1/USB3_IN.D-": [
         "USB_SS"
       ],
       "/USB-C_UP1/USB3_IN.RX1+": [
@@ -761,6 +1013,9 @@
       ],
       "Net-(C60-Pad2)": [
         "USB_SS"
+      ],
+      "Net-(D13-C)": [
+        "Power"
       ],
       "Net-(U1-USB3DN_TXDM2)": [
         "USB_SS"
@@ -816,6 +1071,9 @@
       "Net-(U3-TX2P)": [
         "USB_SS"
       ],
+      "VCORE": [
+        "Power"
+      ],
       "unconnected-(C123-Pad2)": [
         "USB_SS"
       ]
@@ -851,7 +1109,7 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": false,
+      "exclude_dnp": true,
       "fields_ordered": [
         {
           "group_by": false,
@@ -972,14 +1230,26 @@
           "label": "Mouser Part No ",
           "name": "Mouser Part No ",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1009,8 +1279,16 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

@@ -1,0 +1,16 @@
+11-23 14:06:34 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'win32'
+11-23 14:06:34 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.11.5 (main, Jun 15 2025, 06:45:45) [MSC v.1942 64 bit (AMD64)]'
+11-23 14:06:34 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 9.0.3
+11-23 14:06:34 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 4.0.1
+11-23 14:06:34 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x000001B2BC4E9A20>
+11-25 18:39:57 root 31:Successfully imported wx module
+11-25 18:39:57 root 58:Failed to import local modules
+Traceback (most recent call last):
+  File "C:\Users\Dell\Documents\KiCad\9.0\scripting\plugins\impart_action.py", line 39, in <module>
+    import KiCad_Settings
+  File "C:\Users\Dell\Documents\KiCad\9.0\scripting\plugins\KiCad_Settings\__init__.py", line 6, in <module>
+    from kiutils.libraries import LibTable, Library
+ModuleNotFoundError: No module named 'kiutils'
+11-25 18:39:57 impart_easyeda 38:Failed to import easyeda2kicad dependencies: No module named 'easyeda2kicad'
+11-25 18:39:58 com_github_Steffen-W_KiCad-Parasitics.ngspyce.sharedspice 59:Warning: can't find the initialization file spinit.
+11-25 18:39:58 kicad_testpoints-pcm 307:Loading kicad_testpoints

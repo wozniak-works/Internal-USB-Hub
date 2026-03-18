@@ -1,0 +1,62 @@
+(version 1)
+
+# KiCad 9.0 Custom Rules for Multilayer 1oz PCB
+# Based on specific manufacturer constraints images
+
+# -----------------------------------------------------------
+# Rule 1: SMD Pad to Pad Clearance
+# Image 3: "SMD pad to pad clearance (different nets): 0.15mm"
+# -----------------------------------------------------------
+(rule "SMD Pad to Pad Clearance"
+    (constraint clearance (min 0.15mm))
+    (condition "A.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Type == 'Pad' && B.Pad_Type == 'SMD'"))
+
+# -----------------------------------------------------------
+# Rule 2: Via Hole to Track (Outer Layers)
+# Image 3: "Via hole to Track: 0.2mm"
+# -----------------------------------------------------------
+(rule "Via Hole to Track Clearance"
+    (constraint hole_clearance (min 0.2mm))
+    (condition "A.Type == 'Via'"))
+
+# -----------------------------------------------------------
+# Rule 3: PTH Hole to Track (Outer Layers)
+# Image 4: "PTH to Track... minimum 0.28mm"
+# Note: Manufacturer recommends 0.35mm if space permits.
+# -----------------------------------------------------------
+(rule "PTH Hole to Track Clearance"
+    (constraint hole_clearance (min 0.28mm))
+    (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# -----------------------------------------------------------
+# Rule 4: NPTH to Track
+# Image 4: "NPTH to Track: 0.2mm"
+# -----------------------------------------------------------
+(rule "NPTH to Track Clearance"
+    (constraint hole_clearance (min 0.2mm))
+    (condition "A.Pad_Type == 'NPTH, Mechanical'"))
+
+# -----------------------------------------------------------
+# Rule 5: Inner Layer Via Hole to Copper
+# Image 3: "Inner layer via hole to copper clearance: 0.2mm"
+# -----------------------------------------------------------
+(rule "Inner Layer Via Hole to Copper"
+    (constraint hole_clearance (min 0.2mm))
+    (condition "A.Type == 'Via' && A.Layer != 'F.Cu' && A.Layer != 'B.Cu'"))
+
+# -----------------------------------------------------------
+# Rule 6: Inner Layer PTH Hole to Copper
+# Image 3: "Inner layer PTH pad hole to copper clearance: 0.3mm"
+# This is LARGER than the via clearance!
+# -----------------------------------------------------------
+(rule "Inner Layer PTH Hole to Copper"
+    (constraint hole_clearance (min 0.3mm))
+    (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Layer != 'F.Cu' && A.Layer != 'B.Cu'"))
+
+# -----------------------------------------------------------
+# Rule 7: NPTH Annular Ring
+# Image 2: "NPTH pad annular ring >= 0.45mm"
+# -----------------------------------------------------------
+(rule "NPTH Mechanical Pad Annular Ring"
+    (constraint annular_width (min 0.45mm))
+    (condition "A.Pad_Type == 'NPTH, Mechanical'"))
